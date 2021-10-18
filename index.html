@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header class="displaytype">
+        <h1>
+            DojoWeather
+        </h1>
+        <nav>
+            <ul class="displaytype">
+                <li onclick="alert('Loading Weather Report')">Burbank</li>
+                <li onclick="alert('Loading Weather Report')">Chicago</li>
+                <li onclick="alert('Loading Weather Report')">Dallas</li>
+            </ul>
+        </nav>
+    </header>
+    <header class="displaytype border">
+        <h2>San Jose</h2>
+        <div class="displaytype">
+            <p>show temperature in</p>
+            <select id="unit" onchange="convertUnits()" name="units">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+    </header>
+    <div class="tables">
+        <table>
+            <tr>
+                <th>Today</th>
+            </tr>
+            <tr>
+                <td><img src="some_rain.png" alt="some rain"></td>
+            </tr>
+            <tr>
+                <td class="flex">some rain</td>
+            </tr>
+            <tr class="flex">
+                <td class="display">
+                    <p class="unitchange">24</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+                <td class="display">
+                    <p class="unitchange">18</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Tomorrow</th>
+            </tr>
+            <tr>
+                <td><img src="some_sun.png" alt="some sun"></td>
+            </tr>
+            <tr>
+                <td class="flex">some sun</td>
+            </tr>
+            <tr class="flex">
+                <td class="display">
+                    <p class="unitchange">27</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+                <td class="display">
+                    <p class="unitchange">19</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Today</th>
+            </tr>
+            <tr>
+                <td><img src="some_clouds.png" alt="some clouds"></td>
+            </tr>
+            <tr>
+                <td class="flex">some clouds</td>
+            </tr>
+            <tr class="flex">
+                <td class="display">
+                    <p class="unitchange">21</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+                <td class="display">
+                    <p class="unitchange">16</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Today</th>
+            </tr>
+            <tr>
+                <td><img src="some_sun.png" alt="some sun"></td>
+            </tr>
+            <tr>
+                <td class="flex">some sun</td>
+            </tr>
+            <tr class="flex">
+                <td class="display">
+                    <p class="unitchange">26</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+                <td class="display">
+                    <p class="unitchange">21</p>
+                    <p>
+                        °
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer id="cookies">
+        <div class="cookie">
+            <img src="cookie.png" alt="cookiesareused">
+        </div>
+        <div>
+            <h1>Stop! Cookie time</h1>
+            <div class="displaytype">
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to proivde social media features and to analyse our traffic.</p>
+                <a href="#">Read more...</a> 
+            </div>
+        </div>
+        <input onclick="removeElement()" type="submit" value="I Accept" >
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    margin: auto 0px;
+    padding: 0px;
+}
+.displaytype {
+    display: flex;
+    align-items: center;
+}
+header {
+    justify-content: space-between;
+    margin: 0px 10%;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li {
+    margin-right: 20px;
+}
+.border {
+    border-bottom: 3px solid black;
+}
+select {
+    height: 30px;
+    margin-left: 20px;
+}
+.tables {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+.display {
+    display: flex;
+}
+footer {
+    position: fixed;
+    border: black solid 3px;
+    bottom: 10px;
+    right: 20%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.cookie img {
+    height: 100px;
+}
